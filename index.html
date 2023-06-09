@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><All-About-Dogs></All-About-Dogs></title>
+</head>
+<body>
+    <nav>
+
+    <a href="contact.html">CONTACT</a>
+</nav>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: rgb(228, 228, 225);}
+#News {background-color: rgb(192, 192, 190);}
+#Contact {background-color:rgb(168, 168, 165)}
+#About {background-color: rgb(152, 152, 152)}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('Breeds', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Care', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('Adopt', this, 'orange')">About</button>
+<button class="tablink" onclick="openPage('Yelp', this, 'orange')">About</button>
+
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="\Breeds" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="Yelp" class="tabcontent">
+  <h3>Yelp</h3>
+  <p></p>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+
+<h1>Welcome to All-About-Dogs!</h1>
+
+<p>
+      We're your one-stop shop for all things dogs. Whether you're looking for information on dog breeds, training, nutrition, or anything else related to our furry friends, we have it all.
+    Here's what you can find on our website:
+    
+    Dog Breeds: Learn about all the different dog breeds, including their history, personality, and care requirements. <br>
+    Training: Find tips and advice on how to train your dog, whether you're a beginner or an experienced owner. <br>
+    Nutrition: Learn about the best foods for your dog and how to feed them a healthy diet. <br>
+    Health: Get information on common dog health issues and how to prevent them. <br>
+    Grooming: Find tips on how to keep your dog looking and feeling their best. <br>
+    Traveling with Dogs: Learn how to safely travel with your dog, whether you're going on a road trip or flying. <br>
+    Dog Activities: Find ideas for fun activities to do with your dog, such as hiking, playing fetch, or going to the dog park. <br>
+    We also have a blog where we share articles on a variety of dog-related topics. <br>
+    
+    So whether you're a new dog owner or you've been a lifelong pet lover, Dog Central is the perfect place for you.
+    
+    Start exploring today!
+    
+    You can also add some images and videos to your home page to make it more visually appealing. You could also include a call to action, such as a button that invites visitors to sign up for your newsletter or follow you on social media.</p>
+
+</body>
+</html>
